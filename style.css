@@ -3992,7 +3992,7 @@ body.page-is-exiting .footer-section {
 .corner-map-btn,
 .corner-wa-btn {
     position: fixed;
-    bottom: 20px;
+    bottom: 60px;
     z-index: 999999;
     display: inline-flex;
     align-items: center;
