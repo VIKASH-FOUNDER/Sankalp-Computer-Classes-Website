@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding set karna taaki special characters aur Hindi/English text sahi dikhe -->
+    <meta charset="UTF-8">
+    <!-- Mobile aur tablet screens par responsive layout ke liye viewport tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Objective &amp; Syllabus - Sankalp Computer Classes</title>
+
+    <!-- Google Fonts: Poppins & Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="./Assets/SANKALP COMPUTER LOGO.jpg">
+    <!-- Global Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dynamic Theme Background Glow -->
+    <div class="bg-animation-container">
+        <div class="bg-glow-shape shape-1"></div>
+        <div class="bg-glow-shape shape-2"></div>
+        <div class="bg-glow-shape shape-3"></div>
+    </div>
+
+    <!-- Locked Sticky Header -->
+    <div class="site-sticky-wrapper">
+        <header class="header-sticky-container">
+            <div class="trust-bar">
+                <div class="trust-container">
+                    <div class="marquee-wrapper">
+                        <div class="marquee-content">
+                            <span class="badge">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#68BB45" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                                ISO 9001:2015 Certified Institute
+                            </span>
+                            <span class="divider">|</span>
+                            <span class="badge">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#68BB45" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                                Govt. of India MSME Registered
+                            </span>
+                            <span class="divider">|</span>
+                            <span class="trust-contact">Helpline: +91-8700036420</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <header class="premium-header">
+            <div class="header-container">
+                <div class="brand-section">
+                    <a href="index.html#home" class="brand-link" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                        <img src="./Assets/SANKALP COMPUTER LOGO.jpg" alt="Logo" class="brand-logo">
+                        <div class="brand-titles">
+                            <h1 class="brand-name">SANKALP COMPUTER</h1>
+                            <span class="brand-tagline">Skilling Nation</span>
+                        </div>
+                    </a>
+                </div>
+
+                <nav class="nav-section">
+                    <div class="nav-links-container" id="navLinks">
+                        <a href="index.html#home" class="nav-link">Home</a>
+                        <a href="courses.html" class="nav-link" style="color: #68BB45;">Courses</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="index.html#contact" class="nav-link">Contact</a>
+                    </div>
+
+                    <button id="themeToggle" class="theme-btn" title="Toggle Theme">
+                        <span id="themeIcon">🌙</span>
+                    </button>
+
+                    <button id="mobileMenuBtn" class="mobile-btn" aria-label="Menu">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    </button>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- ========================================================================== -->
+    <!-- COURSE OBJECTIVE & SYLLABUS DETAIL SECTION (Populated by script.js)        -->
+    <!-- ========================================================================== -->
+    <section class="course-detail-page-section" id="courseDetailContainer">
+        <div class="courses-container">
+
+            <!-- Back to All Courses Link -->
+            <div class="detail-breadcrumb">
+                <a href="courses.html" class="back-courses-link">&larr; Back to All 16 Courses</a>
+            </div>
+
+            <!-- Hero Banner Card of Selected Course -->
+            <div class="detail-hero-card">
+                <div class="detail-hero-info">
+                    <span class="section-tag" id="detailCategoryBadge">Course Category</span>
+                    <h1 class="detail-course-title" id="detailCourseTitle">Loading Course...</h1>
+                    <p class="detail-course-subtitle" id="detailCourseDesc"></p>
+
+                    <!-- Key Course Highlights Strip -->
+                    <div class="detail-highlights-grid">
+                        <div class="detail-highlight-item">
+                            <span class="highlight-label">Duration</span>
+                            <strong id="detailDuration">-</strong>
+                        </div>
+                        <div class="detail-highlight-item">
+                            <span class="highlight-label">Training Mode</span>
+                            <strong id="detailMode">100% Practical Lab</strong>
+                        </div>
+                        <div class="detail-highlight-item">
+                            <span class="highlight-label">Eligibility</span>
+                            <strong id="detailEligibility">10th / 12th / Any Stream</strong>
+                        </div>
+                        <div class="detail-highlight-item">
+                            <span class="highlight-label">Certificate</span>
+                            <strong id="detailCertification">ISO 9001:2015 &amp; MSME</strong>
+                        </div>
+                    </div>
+
+                    <!-- Primary Enroll Now CTA (Opens Contact Form in New Tab with Course Pre-selected) -->
+                    <div class="detail-cta-row">
+                        <a href="index.html#contact" target="_blank" rel="noopener noreferrer" class="enroll-btn detail-enroll-btn" id="detailEnrollBtn">
+                            <span>ENROLL NOW IN THIS COURSE</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="courses.html" class="explore-chevron-btn">View Other Courses</a>
+                    </div>
+                </div>
+
+                <!-- Right Side Course Banner Image -->
+                <div class="detail-hero-media">
+                    <img src="" alt="Course Banner" id="detailCourseImage" class="detail-banner-img">
+                </div>
+            </div>
+
+            <!-- Two Column Content: Course Objective + Module-wise Detailed Syllabus -->
+            <div class="detail-content-grid">
+
+                <!-- Left Column: Course Objective & Career Scope -->
+                <div class="detail-side-column">
+                    <div class="detail-box-card">
+                        <h2 class="detail-section-heading">🎯 Course Objective (उद्देश्य)</h2>
+                        <p class="detail-objective-paragraph" id="detailObjectiveText"></p>
+                    </div>
+
+                    <div class="detail-box-card">
+                        <h2 class="detail-section-heading">💼 Career &amp; Job Opportunities</h2>
+                        <ul class="detail-career-list" id="detailCareerList"></ul>
+                    </div>
+                </div>
+
+                <!-- Right Column: Complete Module-wise Syllabus -->
+                <div class="detail-main-column">
+                    <div class="detail-box-card">
+                        <h2 class="detail-section-heading">📚 Complete Course Syllabus (सिलेबस)</h2>
+                        <div class="detail-modules-accordion" id="detailSyllabusModules"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Professional Footer -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-logo">Sankalp Computer Classes</h3>
+                    <p class="footer-about">
+                        Empowering students with industry-ready technical skills from basic to advanced programming. ISO 9001:2015 &amp; MSME Certified Institute.
+                    </p>
+                    <div class="footer-address-box">
+                        <strong>Address:</strong><br>
+                        Shop No. 46, Tyagi Market, Veer Bazaar Road, Vikas Nagar, New Delhi - 110059
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Home / होम</a></li>
+                        <li><a href="courses.html">Our Courses / कोर्सेज</a></li>
+                        <li><a href="index.html#why-us">Why Choose Us / विशेषताएं</a></li>
+                        <li><a href="index.html#contact">Contact Us / संपर्क करें</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Business Emails</h4>
+                    <ul class="footer-emails-list">
+                        <li><a href="mailto:sankalp.cc.info@gmail.com">✉️ sankalp.cc.info@gmail.com</a></li>
+                        <li><a href="mailto:sankalphelpdeskdelhi@gmail.com">✉️ sankalphelpdeskdelhi@gmail.com</a></li>
+                        <li><a href="mailto:Sankalphelpus@gmail.com">✉️ Sankalphelpus@gmail.com</a></li>
+                        <li><a href="mailto:Sankalp.helpme@gmail.com">✉️ Sankalp.helpme@gmail.com</a></li>
+                       
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <div class="helpdesk-card">
+                        <p class="helpdesk-title">📞 Student Helpdesk</p>
+                        <p class="footer-contact-info"><strong>Helpline:</strong> +91 8700036420, 8851150620</p>
+                        <p class="footer-contact-info"><strong>Timing:</strong> Mon - Sat: 09:00 AM - 09:00 PM</p>
+                        <p class="footer-contact-info"><strong>Sunday:</strong> Backup & Special Classes 09:30 AM to 02:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p>&copy; 2026 Sankalp Computer Classes. All Rights Reserved.</p>
+                <p class="footer-dev-credit">Designed by sankalp computer classes</p>
+            </div>
+        </div>
+    </footer>
+        <!-- PROFESSIONAL FOOTER SECTION ENDS -->
+
+<!-- Bottom-Left Google Map Button -->
+<a href="https://maps.app.goo.gl/1RxVM5eTQw51VXBi8" target="_blank" rel="noopener noreferrer"
+    class="corner-float-btn corner-map-btn" title="View Center on Google Maps">
+    <span class="corner-btn-icon" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
+        </svg>
+    </span>
+    <span class="corner-btn-label">Google Map</span>
+</a>
+
+<!-- Bottom-Right WhatsApp Connect Button -->
+<a href="https://wa.me/918700036420?text=Namaste%20Sankalp%20Computer%20Classes!%20Mujhe%20computer%20courses%20aur%20admission%20ke%20baare%20mein%20jaankari%20chahiye."
+    target="_blank" rel="noopener noreferrer"
+    class="corner-float-btn corner-wa-btn" title="Chat with Sankalp Computer Classes on WhatsApp">
+    <span class="corner-btn-icon" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor">
+            <path d="M16.04 3.2c-7.07 0-12.8 5.73-12.8 12.8 0 2.26.59 4.46 1.71 6.4L3.2 28.8l6.58-1.72a12.74 12.74 0 0 0 6.26 1.63h.01c7.06 0 12.79-5.73 12.79-12.8 0-3.42-1.33-6.64-3.75-9.06A12.72 12.72 0 0 0 16.04 3.2zm0 23.36h-.01a10.6 10.6 0 0 1-5.4-1.48l-.39-.23-3.9 1.02 1.04-3.8-.25-.4a10.62 10.62 0 0 1-1.63-5.67c0-5.86 4.77-10.63 10.64-10.63 2.84 0 5.51 1.11 7.51 3.12a10.56 10.56 0 0 1 3.12 7.52c0 5.86-4.77 10.63-10.63 10.63zm5.83-7.96c-.32-.16-1.89-.93-2.18-1.04-.29-.11-.5-.16-.72.16-.21.32-.82 1.04-1.01 1.25-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.58-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.98-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.12 1.09-1.12 2.66s1.15 3.09 1.31 3.3c.16.21 2.26 3.45 5.47 4.84.76.33 1.36.53 1.82.68.77.24 1.47.21 2.02.13.62-.09 1.89-.77 2.16-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37z"/>
+        </svg>
+    </span>
+    <span class="corner-btn-label">WhatsApp Us</span>
+</a>
+
+    <!-- Shared JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
