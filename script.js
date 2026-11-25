@@ -1014,23 +1014,3 @@ document.addEventListener("DOMContentLoaded", () => {
 // ======================================================================================
 
 
-// Netlify ke free-plan floating badge (#nl-badge) aur popup card (#nl-card) ko DOM se hatane ka function
-function removeNetlifyBadge() {
-  // Jin elements par nl-badge, nl-card ya "Powered by Netlify" aria-label laga hai, un sabko select karke hata dein
-  document
-    .querySelectorAll('#nl-badge, .nl-badge, #nl-card, .nl-card, [aria-label*="Powered by Netlify"]')
-    .forEach((el) => el.remove());
-}
-
-// Jab HTML structure load ho jaye, tab pehli baar badge remove chalayein
-document.addEventListener('DOMContentLoaded', removeNetlifyBadge);
-
-// Jab images/scripts ke saath poora page load ho jaye, tab dobara check karke hatayein
-window.addEventListener('load', removeNetlifyBadge);
-
-// MutationObserver: agar Netlify ki script page load hone ke thodi der baad bhi badge inject kare, to turant pakad kar remove kar de
-const badgeObserver = new MutationObserver(removeNetlifyBadge);
-badgeObserver.observe(document.documentElement, {
-  childList: true,
-  subtree: true,
-});
