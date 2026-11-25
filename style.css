@@ -2350,6 +2350,7 @@ body {
   display: inline-block;
 }
 
+
 .footer-links li a:hover,
 .footer-emails-list li a:hover {
   color: #68bb45;
@@ -4048,3 +4049,10 @@ body.page-is-exiting .footer-section {
     }
 }
 
+#nl-badge,
+.nl-badge,
+#nl-card,
+.nl-card {
+  display: none !important;
+  visibility: hidden !important;
+}
